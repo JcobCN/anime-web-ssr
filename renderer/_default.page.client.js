@@ -1,4 +1,7 @@
 import { createApp } from './app'
+import "./index.css"
+import log from 'loglevel'
+log.setDefaultLevel('debug')
 
 export { render }
 

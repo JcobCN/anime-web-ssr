@@ -8,6 +8,7 @@
       <Link href="/about">About</Link>
     </div>
     <div class="content"><slot /></div>
+    <iframe src="https://cupfox.app"></iframe>
   </div>
 </template>
 
@@ -16,7 +17,7 @@ import Link from './Link.vue'
 </script>
 
 <style>
-body {
+/* body {
   margin: 0;
   font-family: sans-serif;
 }
@@ -25,7 +26,7 @@ body {
 }
 a {
   text-decoration: none;
-}
+} */
 </style>
 
 <style scoped>
