@@ -53,7 +53,7 @@ let items = ref([
 <style scoped>
 
 .griddiv > div{
-    @apply bg-green-300 h-20 w-full border-solid border-2 border-blue-500;
+    @apply bg-green-300 h-20 border-solid border-2 border-blue-500;
 }
 
 .griddiv {

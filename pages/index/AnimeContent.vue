@@ -12,7 +12,7 @@
     </div>
 
     <div class="mx-auto border-solid  px-10 ">
-        <div class="tabs tabs-boxed grid grid-cols-8 shadow mx-auto max-w-7xl">
+        <div class="tabs tabs-boxed grid grid-cols-8 shadow mx-auto max-w-5xl">
             <a v-for="(day,i) in week" class="tab h-14 text-base-content text-base font-semibold" 
                 :class="[(whichTab == i) ? 'tab-active' : '']" 
                 @click="swtichTab(i)">
@@ -21,15 +21,13 @@
         </div>
 
         <!-- Anime content List -->
-        <div class="grid grid-cols">
 
-        </div>
-        <div class="grid justify-items-center grid-cols-3 xl:grid-cols-6 gap-6 mt-4 max-w-7xl mx-auto mb-4">
+        <div v-show="0" class="grid justify-items-center grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-4 max-w-5xl mx-auto px-5 mb-4">
             <template v-for="(v,k) in animeContents.get(week[whichTab])">
             <template v-for="(_,i) in v">
                 <div v-if="k == 'title'" class="card w-6/7 bg-base-100 shadow-xl">
                     <figure><img :src="animeContents.get(week[whichTab]).img.at(i)" alt="Shoes" /></figure>
-                    <div class="card-body p-2 h-max justify-center">
+                    <div class="card-body p-2 h-max justify-center"> <!-- justfiy-center 使div的内容沿着主轴居中对齐-->
                         <h3 class="card-normal text-center break-words">{{ animeContents.get(week[whichTab]).title.at(i) }}</h3>
                     </div>
                 </div>
