@@ -1,10 +1,7 @@
 <template>
     
-    <!-- <a href="/" class="logo">
-        <img src="./logo.svg" height="64" width="64" alt="logo" />
-    </a>
-    <Link href="/">Home</Link>
-    <Link href="/about">About</Link> -->
+    <!-- let icon file import. -->
+    <img class="invisible" src="./logo.svg" height="0" width="0" alt="logo" /> 
     <div class="content">
         <slot />
     </div>
